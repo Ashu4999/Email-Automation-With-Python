@@ -10,6 +10,7 @@ email_body = 'Your Leave Approved\nPlease commit you changes before leaving from
 # html="<h1>This is testing for html</h1>" //send this as parameter in html default parameter for html
 
 if __name__ == "__main__":
+    print("Email Automation Started Please Wait")
     leaveAppArr = []
     leaveAppArr = getEmails()
     send_email(to_emails=leaveAppArr, subject=email_subject, from_email=email_from, email_body=email_body, username=username, password=password)
